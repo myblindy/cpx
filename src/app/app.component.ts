@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Backend } from './backend';
+import { ResizedEvent } from 'angular-resize-event/resized-event';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cpx';
+
+  constructor(private backend: Backend) {}
 }

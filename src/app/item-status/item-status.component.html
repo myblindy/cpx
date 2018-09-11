@@ -1,0 +1,5 @@
+<div class='status-item' [style.left.px]="positionX" [style.top.px]="positionY"> 
+    <caption> {{ status.caption }} </caption>
+    <img [src]="status.state | stateToImage">
+    <table><tr><td class='align-middle-center'> {{ status.description }} </td></tr></table>
+</div>

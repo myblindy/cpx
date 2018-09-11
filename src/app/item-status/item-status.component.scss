@@ -1,0 +1,51 @@
+$status-width : 300px;
+$status-height : 100px; 
+$status-margin : 4px;
+
+$caption-height : 20px;
+
+$icon-width: 60px;
+
+
+.status-item {
+    height: $status-height;
+    width: $status-width;
+    border: 1px black;
+    background-color: lightgray;
+    margin: $status-margin;
+    position: absolute;
+
+    caption {
+        background-color: gray;
+        height: $caption-height;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        overflow: initial;
+        font-weight: bold;
+    }
+
+    img {
+        width: $icon-width;
+        height: $icon-width;
+        padding-top: ($status-height - $caption-height - $icon-width) / 2;
+        padding-bottom: ($status-height - $caption-height - $icon-width) / 2;
+    }
+
+    table {
+        width: $status-width - $icon-width;
+        height: $status-height - $caption-height;
+        vertical-align: top;
+        border: 0px;
+        display: inline-table;
+
+        td {
+            font-style: italic;
+        }
+
+        td.align-middle-center {
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+}
